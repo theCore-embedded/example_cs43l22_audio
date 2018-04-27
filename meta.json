@@ -1,0 +1,11 @@
+{
+    "name": "STM32 F4 Discovery CS43L22 audio demo",
+    "targets": [
+        {
+            "name": "stm32f4_disc",
+            "config": "stm32f4_discovery.json",
+            "description": "STM32F4 discovery board",
+            "toolchain": "arm-cm4-gnu.cmake"
+        }
+    ]
+}
