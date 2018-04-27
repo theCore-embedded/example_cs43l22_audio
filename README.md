@@ -27,13 +27,15 @@
    * With `sudo`:
 
      ```
-        tcore runenv --sudo -- openocd -f board/stm32f4discovery.cfg -c 'init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit'
+        cd build/stm32f4_disc
+        tcore runenv --sudo "openocd -f board/stm32f4discovery.cfg -c 'init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit'"
      ```
 
    * Without `sudo`:
 
      ```
-        tcore runenv -- openocd -f board/stm32f4discovery.cfg -c 'init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit'
+        cd build/stm32f4_disc
+        tcore runenv "openocd -f board/stm32f4discovery.cfg -c 'init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit'"
      ```
 
    **TODO**
