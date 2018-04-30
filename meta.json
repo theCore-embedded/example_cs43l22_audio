@@ -1,11 +1,17 @@
 {
     "name": "STM32 F4 Discovery CS43L22 audio demo",
-    "targets": [
-        {
-            "name": "stm32f4_disc",
+    "targets": {
+        "stm32f4_disc": {
             "config": "stm32f4_discovery.json",
             "description": "STM32F4 discovery board",
-            "toolchain": "arm-cm4-gnu.cmake"
+            "toolchain": "arm-cm4-gnu.cmake",
+
+            "debuggers": {
+                "openocd": {
+                    "file": "board/stm32f4discovery.cfg",
+                    "flash_address": "0x08000000"
+                }
+            }
         }
-    ]
+    }
 }
