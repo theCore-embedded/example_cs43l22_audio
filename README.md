@@ -24,19 +24,34 @@
 
 1. Run:
 
-   * With `sudo`:
+   1. On old STM32F407G-DISC boards, with STLINK/V2: 
 
-     ```
-        tcore --sudo flash
-     ```
+      * With `sudo`:
 
-   * Without `sudo`:
+        ```
+            tcore --sudo flash
+        ```
 
-     ```
-        tcore flash
-     ```
+      * Without `sudo`:
 
-   **TODO**
+        ```
+            tcore flash
+        ```
+
+   1. On new STM32F407G-DISC1 boards, with STLINK/V2.1:
+
+      * With `sudo`:
+
+        ```
+            tcore --sudo flash --debuger-config stlink-v2.1
+        ```
+
+      * Without `sudo`:
+
+        ```
+            tcore flash --debuger-config stlink-v2.1
+        ```
+
 
 This full example description and documentation is located in [theCore website](https://forgge.github.io/theCore/examples.html#stm32f4-discovery-audio-example-with-cs43l22-audio-dac)
 

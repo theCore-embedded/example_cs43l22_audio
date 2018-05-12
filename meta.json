@@ -8,8 +8,16 @@
 
             "debuggers": {
                 "openocd": {
-                    "file": "board/stm32f4discovery.cfg",
-                    "flash_address": "0x08000000"
+                    "stlink-v2": {
+                        "file": "board/stm32f4discovery.cfg",
+                        "flash_address": "0x08000000",
+                        "help": "OpenOCD configuration for STLINK v2 debugger"
+                    },
+                    "stlink-v2.1": {
+                        "file": "board/stm32f429disc1.cfg",
+                        "flash_address": "0x08000000",
+                        "help": "OpenOCD configuration for STLINK v2.1 debugger"
+                    }
                 }
             }
         }
