@@ -1,0 +1,21 @@
+language: cpp
+sudo: required
+dist: trusty
+
+branches:
+    only:
+        - develop
+        - /^develop-.*$/
+        - master
+        - release
+
+before_install:
+    - sudo apt-get update
+    - sudo apt-get install python3 python3-pip
+
+install:
+    - sudo pip3 install tcore
+    - tcore bootstrap
+
+script:
+    - tcore compile --target stm32f4_disc
