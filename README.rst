@@ -27,7 +27,7 @@ Quick start
 
         cd example_cs43l22_audio
 
-#. Compile:
+#. Compile::
 
         tcore compile --target stm32f4_disc
 
