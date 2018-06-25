@@ -12,12 +12,11 @@
 //! While one part of the buffer is played, second one is populated with new data.
 //! See event_handler() to understand how it works.
 
-#include "target.hpp"
-
 #include <ecl/iostream.hpp>
 #include <ecl/thread/utils.hpp>
 #include <ecl/thread/semaphore.hpp>
 #include <algorithm>
+#include <ecl/core_generated.hpp>
 
 //! Audio file in a form of C array
 //! 16 bit per sample, mono, 8 kHz
